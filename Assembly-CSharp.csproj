@@ -925,6 +925,10 @@
       <Project>{A1FE1DE5-BF69-DCAB-2F88-8453DE7C456F}</Project>
       <Name>Unity.VisualScripting.State.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.XR.ARFoundation.InternalUtils.csproj">
+      <Project>{47EFBB3C-31E9-4008-B52D-9FF44B52E5BC}</Project>
+      <Name>Unity.XR.ARFoundation.InternalUtils</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.Mathematics.csproj">
       <Project>{3F8A54D0-B9ED-45CC-A53A-17C0F91B98AD}</Project>
       <Name>Unity.Mathematics</Name>

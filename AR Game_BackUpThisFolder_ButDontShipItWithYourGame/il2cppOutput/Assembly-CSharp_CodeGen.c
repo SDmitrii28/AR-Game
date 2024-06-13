@@ -15,10 +15,9 @@
 extern void BallThrower_Update_m846AC4758A6A32381A3D80073897094BCFB25EB4 (void);
 extern void BallThrower_ThrowBall_mAD4E3F4C71AF4A4F4C0106F09ADD5315FB4A3847 (void);
 extern void BallThrower__ctor_m64B1752285D730D739A96C9BB731C72FDBE5862D (void);
-extern void BasketPlacer_Start_m04A7843DDDDECECFF5B38D9C7EF45AD460F469DD (void);
+extern void BasketPlacer_Update_mD0C0245278FA3C9FB2FD494FEF46A087C1A58D99 (void);
 extern void BasketPlacer_PlaceBasket_m3E9EC5FB383040B67AB073553453375BE3383264 (void);
 extern void BasketPlacer__ctor_m09B0E127013DCC83FBB46582AE0B81A8014CA697 (void);
-extern void BasketPlacer__cctor_mD0AF7312C72A72DC3AD79D5DF78500B37EDF15AD (void);
 extern void AnchorCreator_get_AnchorPrefab_mBBAF7805E9D9F8D79408EE642D153BC76306B25A (void);
 extern void AnchorCreator_set_AnchorPrefab_m53CC9CC3022C713826B44536B48B462C8A1FACFF (void);
 extern void AnchorCreator_RemoveAllAnchors_m6BA302DD9EECA47969FD3F6E5397441DCB09ED21 (void);
@@ -38,15 +37,14 @@ extern void ARFeatheredPlaneMeshVisualizer__cctor_m56285A000EE27A1631BE9C5BCDA5C
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_IsEditorOnly_m59E10A16B0BDEA496377805E39C3D90B1E2C4815 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_Get_mDAD527916A4779DB4ACAFEADC3BA7372671FA647 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes__ctor_mE2C680837D47039E3F06032AA8C63FEDB7E783A5 (void);
-static Il2CppMethodPointer s_methodPointers[26] = 
+static Il2CppMethodPointer s_methodPointers[25] = 
 {
 	BallThrower_Update_m846AC4758A6A32381A3D80073897094BCFB25EB4,
 	BallThrower_ThrowBall_mAD4E3F4C71AF4A4F4C0106F09ADD5315FB4A3847,
 	BallThrower__ctor_m64B1752285D730D739A96C9BB731C72FDBE5862D,
-	BasketPlacer_Start_m04A7843DDDDECECFF5B38D9C7EF45AD460F469DD,
+	BasketPlacer_Update_mD0C0245278FA3C9FB2FD494FEF46A087C1A58D99,
 	BasketPlacer_PlaceBasket_m3E9EC5FB383040B67AB073553453375BE3383264,
 	BasketPlacer__ctor_m09B0E127013DCC83FBB46582AE0B81A8014CA697,
-	BasketPlacer__cctor_mD0AF7312C72A72DC3AD79D5DF78500B37EDF15AD,
 	AnchorCreator_get_AnchorPrefab_mBBAF7805E9D9F8D79408EE642D153BC76306B25A,
 	AnchorCreator_set_AnchorPrefab_m53CC9CC3022C713826B44536B48B462C8A1FACFF,
 	AnchorCreator_RemoveAllAnchors_m6BA302DD9EECA47969FD3F6E5397441DCB09ED21,
@@ -67,7 +65,7 @@ static Il2CppMethodPointer s_methodPointers[26] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_Get_mDAD527916A4779DB4ACAFEADC3BA7372671FA647,
 	UnitySourceGeneratedAssemblyMonoScriptTypes__ctor_mE2C680837D47039E3F06032AA8C63FEDB7E783A5,
 };
-static const int32_t s_InvokerIndices[26] = 
+static const int32_t s_InvokerIndices[25] = 
 {
 	6395,
 	6395,
@@ -75,7 +73,6 @@ static const int32_t s_InvokerIndices[26] =
 	6395,
 	6395,
 	6395,
-	9817,
 	6295,
 	4997,
 	6395,
@@ -100,7 +97,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	26,
+	25,
 	s_methodPointers,
 	0,
 	NULL,

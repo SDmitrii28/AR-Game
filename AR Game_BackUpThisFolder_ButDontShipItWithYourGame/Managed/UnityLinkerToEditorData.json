@@ -648,7 +648,7 @@
         "name": "Physics",
         "dependencies": [
           {
-            "name": "Collider",
+            "name": "BoxCollider",
             "scenes": [
               "Assets/ExampleAssets/Scenes/SampleScene.unity"
             ],
@@ -656,7 +656,21 @@
             "icon": null
           },
           {
+            "name": "Collider",
+            "scenes": [],
+            "dependencyType": 1,
+            "icon": null
+          },
+          {
             "name": "MeshCollider",
+            "scenes": [
+              "Assets/ExampleAssets/Scenes/SampleScene.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "PhysicMaterial",
             "scenes": [
               "Assets/ExampleAssets/Scenes/SampleScene.unity"
             ],

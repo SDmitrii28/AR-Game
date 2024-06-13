@@ -4,10 +4,10 @@ public class BallThrower : MonoBehaviour
 {
     public GameObject ballPrefab;
     public float throwForce = 500f;
-
+    public BasketPlacer _basketPlacer;
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (_basketPlacer.basketPlaced && Input.GetMouseButtonDown(0))
         {
             ThrowBall();
         }
@@ -17,6 +17,6 @@ public class BallThrower : MonoBehaviour
     {
         GameObject ball = Instantiate(ballPrefab, transform.position, Quaternion.identity);
         Rigidbody rb = ball.GetComponent<Rigidbody>();
-        rb.AddForce(transform.forward+ new Vector3(0,0,1) * throwForce);
+        rb.AddForce(transform.forward * throwForce);
     }
 }

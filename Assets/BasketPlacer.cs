@@ -1,26 +1,39 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
+using UnityEngine.XR.ARSubsystems;
 
+[RequireComponent(typeof(ARAnchorManager))]
 public class BasketPlacer : MonoBehaviour
 {
     public GameObject basketPrefab;
-
+    public ARAnchorManager anchorManager;
     public ARRaycastManager raycastManager;
 
-    void Start()
+    public bool basketPlaced = false;
+
+    void Update()
     {
-        PlaceBasket();
+        if (!basketPlaced && Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+        {
+            PlaceBasket();
+        }
     }
 
     void PlaceBasket()
     {
-        if (raycastManager.Raycast(new Vector2(Screen.width / 2, Screen.height / 2), s_Hits, UnityEngine.XR.ARSubsystems.TrackableType.PlaneWithinPolygon))
+        Vector2 touchPos = Input.GetTouch(0).position;
+
+        var hits = new List<ARRaycastHit>();
+        if (raycastManager.Raycast(touchPos, hits, TrackableType.PlaneWithinPolygon))
         {
-            Pose hitPose = s_Hits[0].pose;
-            Instantiate(basketPrefab, hitPose.position, Quaternion.identity);
+            var hitPose = hits[0].pose;
+
+            ARAnchor anchor = anchorManager.AddAnchor(hitPose);
+
+            Instantiate(basketPrefab, hitPose.position, basketPrefab.transform.rotation, anchor.transform);
+
+            basketPlaced = true;
         }
     }
-
-    static List<ARRaycastHit> s_Hits = new List<ARRaycastHit>();
 }

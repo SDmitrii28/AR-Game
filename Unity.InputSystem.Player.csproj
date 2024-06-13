@@ -277,13 +277,13 @@
     <Compile Include="Library\PackageCache\com.unity.inputsystem@1.4.4\InputSystem\Controls\TouchPhaseControl.cs" />
     <Compile Include="Library\PackageCache\com.unity.inputsystem@1.4.4\InputSystem\Plugins\HID\HID.cs" />
     <Compile Include="Library\PackageCache\com.unity.inputsystem@1.4.4\InputSystem\Utilities\PredictiveParser.cs" />
+    <Compile Include="Library\PackageCache\com.unity.inputsystem@1.4.4\InputSystem\Actions\InputActionTrace.cs" />
     <Compile Include="Library\PackageCache\com.unity.inputsystem@1.4.4\InputSystem\Actions\Composites\ButtonWithTwoModifiers.cs" />
     <Compile Include="Library\PackageCache\com.unity.inputsystem@1.4.4\InputSystem\Actions\Interactions\TapInteraction.cs" />
     <Compile Include="Library\PackageCache\com.unity.inputsystem@1.4.4\InputSystem\Controls\Vector3Control.cs" />
     <Compile Include="Library\PackageCache\com.unity.inputsystem@1.4.4\InputSystem\Editor\AssetEditor\InputActionEditorWindow.cs" />
     <Compile Include="Library\PackageCache\com.unity.inputsystem@1.4.4\InputSystem\Plugins\UI\UISupport.cs" />
     <Compile Include="Library\PackageCache\com.unity.inputsystem@1.4.4\InputSystem\InputMetrics.cs" />
-    <Compile Include="Library\PackageCache\com.unity.inputsystem@1.4.4\InputSystem\Actions\InputActionTrace.cs" />
     <Compile Include="Library\PackageCache\com.unity.inputsystem@1.4.4\InputSystem\Actions\InputBindingComposite.cs" />
     <Compile Include="Library\PackageCache\com.unity.inputsystem@1.4.4\InputSystem\Utilities\Observables\ForDeviceEventObservable.cs" />
     <Compile Include="Library\PackageCache\com.unity.inputsystem@1.4.4\InputSystem\Plugins\EnhancedTouch\Finger.cs" />

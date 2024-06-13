@@ -717,6 +717,10 @@
       <Project>{119F33DF-1C8A-2293-FD9C-2702EB6880F2}</Project>
       <Name>Unity.Subsystem.Registration.Player</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.XR.ARFoundation.InternalUtils.Player.csproj">
+      <Project>{5EDD0888-D36F-21D9-2C6D-8F2566C75BB1}</Project>
+      <Name>Unity.XR.ARFoundation.InternalUtils.Player</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.Mathematics.Player.csproj">
       <Project>{BD37216D-C8ED-27E4-99BD-A7341000F4F9}</Project>
       <Name>Unity.Mathematics.Player</Name>
